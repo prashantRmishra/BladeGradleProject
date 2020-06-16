@@ -26,7 +26,7 @@ public class LoginDaoImpl implements LoginDAO {
 
     @Override
     public String getIFrameUrlDAO(int iframeID) {
-        List<String> urlResult=new ArrayList<String>();
+        List<String> urlResult=new ArrayList<>();
        try {
            
            urlResult= getJdbctemplate().query("select \"iframeURL\" from tb_iframe_details where \"iframeID\"=?", new  Object[]{iframeID}, new RowMapper<String>(){
