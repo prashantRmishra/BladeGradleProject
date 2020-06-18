@@ -10,7 +10,7 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public String getIFrameUrl(int iframeID) {
-        return loginDao.getIFrameUrlDAO(iframeID);
+        return loginDao.getIFrameUrlDao(iframeID);
     }
     
 }

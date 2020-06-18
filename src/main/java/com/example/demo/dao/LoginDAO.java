@@ -1,5 +1,7 @@
 package com.example.demo.dao;
 
 public interface LoginDAO {
-    String getIFrameUrlDAO( int iframeID);
+    String getIFrameUrlDao( int iframeID);
+    boolean setIFrameUrlDaoPlatTransacMnger( int pkey,String iframeUrl,int iframeID);
+    boolean deleteRecord(int iframeID);
 }
